@@ -7,4 +7,8 @@ export class DeviceModelWeb extends WebPlugin implements DeviceModelPlugin {
     console.log('ECHO', options);
     return options;
   }
+
+  getModelInfo(): Promise<{ model: string }> {
+    return Promise.resolve({model: ""});
+  }
 }
